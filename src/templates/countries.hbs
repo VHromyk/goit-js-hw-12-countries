@@ -1,0 +1,13 @@
+<h2 class="countryName">{{name}}</h2>
+<div class="countryInfo">
+    <ul class="countryList">
+        <li class="countryDescriptionItem">Region: <span>{{region}}</span></li>
+        <li class="countryDescriptionItem">Capital: <span>{{capital}}</span></li>
+        <li class="countryDescriptionItem">Area: <span>{{area}}</span></li>
+        <li class="countryDescriptionItem">Population: <span>{{population}}</span> </li>
+        <li class="countryDescriptionItem">Languages: <span>{{#each languages}}{{name}} {{/each}}</span></li>
+        <li class="countryDescriptionItem">Currencies: <span>{{#each currencies}}{{name}} {{/each}}</span></li>
+        <li class="countryDescriptionItem">Timezones: <span>{{timezones}}</span></li>
+    </ul>
+    <img class="countryFlag" src="{{flag}}" width="450" alt="flag of {{name}}">
+</div>
